@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+html,
+body,
+#root,
+.app {
+  height: 100%;
+  width: 100%;
+  font-family: 'Inter', sans-serif;
+  background-color: #1f2026;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #242427;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #48494e;
+}
+
+::-webkit-scrollbar-track:hover {
+  background: #2a2b2f;
+}
+/* Add these styles to your CSS file */
+.parent {
+  display: inline-flex;
+}
+
+.filter-container {
+  margin: 10px;
+  /* display: inline-flex; */
+  width: 100%;
+  position: relative;
+  z-index: 999;
+  text-align: center;
+  padding-left: 14px;
+}
+
+.filter-label {
+  font-weight: bold;
+  margin-right: 10px;
+  color: cadetblue;
+}
+
+.filter-dropdown {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f8f8f8;
+  color: #000000;
+  font-size: 16px;
+  width: 200px;
+  outline: none;
+  cursor: pointer;
+}
+
+.filter-dropdown:hover {
+  background-color: #e8e8e8;
+}
+
+.filter-dropdown:focus {
+  border: 1px solid #007bff;
+  background-color: #fff;
+}
+
+.threecircles {
+  padding-left: 20px;
+  padding-top: 70px;
+}
+@media (max-width: 768px) {
+  .filter-container {
+    width: 100%;
+    /* Full width for smaller screens */
+
+    margin: 5px;
+    /* Reduce margin for smaller screens */
+  }
+
+  .filter-dropdown {
+    width: 100%;
+    font-size: small;
+    /* Full width for smaller screens */
+  }
+}
